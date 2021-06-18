@@ -208,6 +208,20 @@ a {
   color: #34495e;
 }
 
+.time {
+  margin-left: 8px;
+}
+
+.comments-link {
+  margin-left: 4px;
+}
+
+.comments-link::before {
+  content: '|';
+  margin-right: 4px;
+}
+
+
 .news-item .title > a,
 .darkText {
   color: #000;
