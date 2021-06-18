@@ -8,7 +8,53 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <nav class="inner">
+        <div class="container-logo">
+          <a href="#">
+            Hackernews API
+          </a>
+        </div>
+        <div class="fadein">
+          <a href="">news</a>
+          <a href="">newest</a>
+          <a href="">ask</a>
+          <a href="">show</a>
+          <a href="">jobs</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="news-view">
+      <div class="news-list-nav">
+        1
+        <a>Next ></a>
+      </div>
+
+      <!-- NEWS LIST -->
+      <div class="news-list">
+        <div class="view">
+
+          <!-- NEWS ITEM -->
+          <div class="news-item">
+            <div class="score">90</div>
+            <div class="title">
+              <a href="">TDD from the Factorio Team</a>
+              <span class="host">factorio.com</span>
+            </div>
+            <div class="meta">
+              <span class="by">
+                by <a href="">sorahn</a>
+              </span>
+              <span class="time">3 hours ago</span>
+              <span class="comments-link">| <a href="">comments: 84</a></span>
+            </div>
+          </div>
+          <!-- END NEWS ITEM -->
+
+        </div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
