@@ -1,6 +1,11 @@
-import './style.css'
+const btnSearch = document.getElementById('btn-search')
+const app = document.getElementById('app')
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+btnSearch.addEventListener('click', async (ev) => {
+  const formUsername = document.getElementById('username')
+
+  const res = await fetch(`https://api.github.com/users/${formUsername.value}`)
+  const data = await res.json()
+
+  app.innerText = JSON.stringify(data, null, 2)
+})
